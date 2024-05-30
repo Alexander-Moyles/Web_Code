@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    float: left;
+}
+
+orange {
+    color: orange;
+    font-size: 125%
+}
+
+test {
+    word-spacing: 5px;
+}
+
+test2 {
+    word-spacing: 9px;
+}
+
+CNA_color {
+    color: violet
+}
+
+smol {
+    font-size: 75%
+}
+
+A {
+    font-size: 115%
+}

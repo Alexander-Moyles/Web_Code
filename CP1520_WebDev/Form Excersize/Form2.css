@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+table tr td:first-child {
+    width:6em;
+    text-align: right;
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 550px;
+    padding-left: 15px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    width: 550px;
+    color: blue;
+}
+
+table {
+    border: black 3px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tfoot, thead {
+    background-color: lightgreen;
+}
+
+tr td:last-child,
+tbody tr td:nth-last-child(2) {
+    text-align: right;
+}
+
+tr th:nth-child(2) {
+    width: 200px;
+}

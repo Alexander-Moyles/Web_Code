@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, legend {
+    color: rgba(228,0,43,255);
+    font-weight: bold;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    vertical-align:text-bottom
+}
+
+fieldset {
+    border-color: rgba(228,0,43,255);
+    width: 450px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+table thead tr td:first-child{
+    float:right;
+}
+
+.dimbox td {
+    border: 1px lightgray solid;
+    margin: 3px;
+    width: 450px;
+    padding: 5px;
+}
+
+span.measurement {
+    padding-left: 14px;
+}
+
+.red {
+    color: rgba(228,0,43,255);
+}
+
+table thead input, table thead select {
+    width: 250px;
+}
+
+table tbody input.Number {
+    width: 50px;
+}
+
+.button {
+    font-weight: bold;
+    font-size: large;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(235, 197, 197);
+    border-radius: 8px;
+}
+
+table.button-table tr td:nth-child(2){
+    width: 265px;
+    text-align: end;
+    font-size: small;
+    color: rgba(228,0,43,255);
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canada Post</title>
+        <link rel="stylesheet" href="CanadaPost.css">
+    </head>
+    <body>
+        <h1>Canada Post<img src="cpc-logo.svg" alt="Canada Post Logo"></h1>
+        <form>
+            <fieldset>
+                <legend>Sender</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <td><label for="SenderName">Name: </label></td>
+                            <td><input type = "text" id = "SenderName" required autofocus title="Sender's Name must be specified"><span class="red">*</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="SenderAddress">House/Apt # and Strees: </label></td>
+                            <td><input type = "text" id = "SenderAddress" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="SenderTown">Town/City: </label></td>
+                            <td><input type = "text" id = "SenderTown" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="SenderProv">Prov: </label></td>
+                            <td><select id="SenderProv" title="texture">
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Newbrunswick">Newbrunswick</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Yukon">Yukon</option>
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Nunavut">Nunavut</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="SenderPostal">Postal Code: </label></td>
+                            <td><input type = "text" id = "SenderPostal" autofocus></td>
+                        </tr>
+                    </thead>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Recipient</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <td><label for="RecipientName">Name: </label></td>
+                            <td><input type = "text" id = "RecipientName" required autofocus title="Recipient's Name must be specified"><span class="red">*</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RecipientAddress">House/Apt # and Strees: </label></td>
+                            <td><input type = "text" id = "RecipientAddress" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RecipientTown">Town/City: </label></td>
+                            <td><input type = "text" id = "RecipientTown" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RecipientProv">Prov: </label></td>
+                            <td><select id="RecipientProv" title="texture">
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Newbrunswick">Newbrunswick</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Yukon">Yukon</option>
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Nunavut">Nunavut</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RecipientPostal">Postal Code: </label></td>
+                            <td><input type = "text" id = "RecipientPostal" autofocus></td>
+                        </tr>
+                    </thead>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Dimensions</legend>
+                <table class="dimbox">
+                    <tbody>
+                        <tr >
+                            <td>
+                                <label for="DimensionL" class="Number">L</label>
+                                <input type="number" class="Number" id="DimensionL" min="1">
+                                <label for="DimensionW" class="Number">W</label>
+                                <input type="number" class="Number" id="DimensionW" min="1">
+                                <label for="DimensionH" class="Number">H</label>
+                                <input type="number" class="Number" id="DimensionH" min="1">
+                                
+                                <label for="centimeters" class="radio">cm</label>
+                                <input type="radio" class="radio" name="cm/in" id="centimeters" value="cm" checked>
+                                <span class="measurement"> 
+                                    <label for="inches" class="radio">in</label>
+                                    <input type="radio" class="radio" name="cm/in" id="inches" value="in">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Weight" class="Number">Weight</label>
+                                <input type="number" class="Number" id="Weight" min="1">
+
+                                <label for="grams" class="radio">g</label>
+                                <input type="radio" class="radio" name="g/oz" id="grams" value="g" checked>
+                                <span class="measurement">
+                                    <label for="ounces" class="radio">oz</label>
+                                    <input type="radio" class="radio" name="g/oz" id="ounces" value="oz">
+                                </span>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="letter" class="radio">Letter</label>
+                                <input type="radio" class="radio" name="letter/box" id="letter" value="Letter" checked>
+                                <span class="measurement">
+                                    <label for="box" class="radio">Box</label>
+                                    <input type="radio" class="radio" name="letter/box" id="box" value="Box">
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <table>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <label for="radio1" class="option">Regular</label>
+                                <input type="radio" name="radio" id="radio1" value="Regular" checked>
+                                <span class="measurement">
+                                    <label for="radio2" class="option">Xpresspost</label>
+                                    <input type="radio" name="radio" id="radio2" value="Xpresspost">
+                                </span>
+                                <span class="measurement">
+                                    <label for="radio3" class="option">Priority</label>
+                                    <input type="radio" name="radio" id="radio3" value="Priority">
+                                </span>
+                                <span class="measurement">
+                                    <label for="radio4" class="option">Flat Rate Box</label>
+                                    <input type="radio" name="radio" id="radio4" value="Flat Rate Box">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox1" id="checkbox1" value="Registered">
+                                <label for="checkbox1">Registered</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox1" id="checkbox2" value="Insured">
+                                <label for="checkbox2">Insured</label>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+            <table class="button-table">
+                <tr>
+                    <td>
+                        <input class="button" type="submit" id="submit" value="Submit">
+                        <input class="button" type="reset" id="reset" value="Reset">
+                    </td>
+                    <td>
+                        * required field
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dyna-Table</title>
+        <link rel="stylesheet" href="dynaTable.css">
+        <script>
+            window.onload = function () {
+                /* code that's executed when the page is finished rendering */
+
+                document.getElementById("newRow").addEventListener ('click', function () {
+
+                    const rowNode = document.createElement("tr");
+
+                    for (i=1; i<=5;++i) {
+                        const dataNode = document.createElement("td");
+                        dataNode.innerHTML = "Blank";
+                        rowNode.appendChild (dataNode);
+                    }
+
+                    document.getElementById("tableBody").appendChild(rowNode);
+
+                });
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Dyna-Table</h1>
+        <table id="dyna">
+            <tbody id="tableBody">
+                <tr id="row0">
+                    <td>One</td><td>Two</td><td>Three</td><td>Four</td><td>Five</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="newRow">Add row</button>
+    </body>
+</html>

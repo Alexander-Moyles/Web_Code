@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+main {
+    border: 1px solid brown;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: lightgrey;
+}
+
+img {
+    width: 110px;
+    height: 45px;
+    float: left;
+}
+
+.rule0 {
+    color: blue;
+    font-size: 250%;
+    border: 1px solid green;
+}
+
+.rule1 {
+    border: 2px solid green;
+    background-color: white;
+}
+
+.rule2 {
+    color: green;
+}
+
+.rule3 {
+    border: 2px solid purple;
+    background-color: white;
+}
+
+.rule4 {
+    color: gold;
+}
+
+.rule5 {
+    color: red;
+}

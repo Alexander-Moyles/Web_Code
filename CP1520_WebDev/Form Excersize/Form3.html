@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Excersize</title>
+        <link rel="stylesheet" href="Form3.css">
+    </head>
+    <body>
+        <h1>Form Excersize</h1>
+        <form>
+            <fieldset>
+                <legend>Pet Appointment</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <td><label for = "clientname" >Client Name: </label><br></td>
+                            <td><input type = "text" id = "clientname" required autofocus></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "petname">Pet Name: </label><br></td>
+                            <td><input type = "text" id = "petname" autofocus required></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "date">Date: </label><br></td>
+                            <td><input type = "date" id = "date" autofocus required></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "time">Time: </label><br></td>
+                            <td><input type = "time" id = "time" autofocus required></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "phone">Phone #: </label><br></td>
+                            <td><input type = "text" id = "phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be format 999-999-9999"></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan = 3>
+                                <label for="option1" class="option">Room 1</label>
+                                <input type="radio" name="option1" id="option1" value="left side">
+                                
+                                <label for="option2" class="option">Room 2</label>
+                                <input type="radio" name="option1" id="option2" value="right side">
+                                
+                                <label for="option3" class="option">Room 3</label>
+                                <input type="radio" name="option1" id="option3" value="top side">
+                                
+                                <label for="option4" class="option">Room 4</label>
+                                <input type="radio" name="option1" id="option4" value="top side">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <input type="submit" id="button" value="Book">
+                                <input type="reset" id="reset" value="Clear">
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
